@@ -1,0 +1,12 @@
+service: "service:service"  # Same as the argument passed to `bentoml serve`
+labels:
+   owner: krzych
+   stage: dev
+include:
+  - "service.py"
+python:
+  requirements_txt: "./requirements.txt"
+models: # The model to be used for building the Bento.
+- cardiovascular_knn:latest
+docker:
+  python_version: "3.11"

@@ -1,0 +1,6 @@
+/data
+/data_storage
+/mlartifacts
+/mlruns
+/.venv
+/.dvc
